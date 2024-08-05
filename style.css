@@ -1,0 +1,238 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f4a261;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+#products {
+    margin-top: 2rem;
+}
+
+#products h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-list a {
+    margin: 1rem;
+    display: block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #f4a261;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about, #contact {
+    margin-top: 2rem;
+}
+
+#about h2, #contact h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.footer-content a {
+    color: #f4a261;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-content a:hover {
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    header nav ul li {
+        margin: 0 1rem;
+    }
+    
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    header nav ul li a:hover {
+        color: #f4a261;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    main {
+        padding: 2rem;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .navigation {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .navigation.active {
+        display: flex; 
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation ul li {
+        margin: 0.5rem 0;
+    }
+
+    .product-list img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #about, #contact {
+        margin-top: 2rem;
+    }
+    
+    #about h2, #contact h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+    }
+    
+    .footer-content a {
+        color: #f4a261;
+        text-decoration: none;
+        margin: 0 0.5rem;
+    }
+    
+    .footer-content a:hover {
+        color: white;
+    }
+}
